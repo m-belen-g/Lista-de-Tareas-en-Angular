@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Lista de tareass';
+  title = 'Lista de tareas!';
 
   tareas: any[] = []
   crearTarea(tarea: String, $event: any) {

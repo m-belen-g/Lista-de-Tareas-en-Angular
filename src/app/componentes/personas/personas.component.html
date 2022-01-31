@@ -1,0 +1,7 @@
+<div class="personas">
+    <h1> Lista de personas!</h1>
+    <div *ngFor="let persona of personas">
+    <app-persona [persona]="persona"
+    (deletePersona)="borrarPersonaDeLista($event)"></app-persona>
+    </div>
+    </div>

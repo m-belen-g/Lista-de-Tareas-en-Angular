@@ -1,11 +1,20 @@
-<h1>{{title}}</h1>
-<form>
-  <input type="text" placeholder="Escribe una tarea..." #nuevaTarea>
-  <button (click)="crearTarea(nuevaTarea.value, $event)">➕</button>
-</form>
+<div class="container">
+  <h1>{{ title }}</h1>
+  <form>
+    <input type="text" placeholder="Escribe una tarea..." #nuevaTarea />
+    <button (click)="crearTarea(nuevaTarea.value, $event)">➕</button>
+  </form>
 
-<hr>
+  <hr />
 
-<ul *ngFor="let tarea of tareas">
-  <li><span>{{tarea.texto}}</span><button (click)="eliminarTarea(tarea.id)">❌</button></li>
-</ul>
+  <ul *ngFor="let tarea of tareas">
+    <li>
+      <span>{{ tarea.texto }}</span
+      ><button (click)="eliminarTarea(tarea.id)">❌</button>
+    </li>
+  </ul>
+</div>
+
+<div class="container">
+  <app-personas></app-personas>
+</div>
